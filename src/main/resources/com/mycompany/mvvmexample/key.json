@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rafaelsandovalweek10fbjavafx",
+  "private_key_id": "cdb7b63bd883515cfa1e36eb7e8a73c5fe133f7b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6I1SUV35bXclZ\nwsK/CbtoJfAKA/nj7rmZqi6NCUdvSL4S+gW4vRV9BrTnNi7PU7phijh8y/dCfLix\npbOQpDNE/pkp+hpPp6sNGxoCSOZP8Ku+jxhlFs3anmgAD6fbI/MNcO9ZPHEDGMZU\nFfTeeDIb5KKMeEHJNWi9b7TEPJJSKGG1DfthCGmNoxTupbc6s0wTWhwfDzAquamb\n22KKq0D3nfiX7iyBZJbgB7Xd3FidpTAZzjlX8Ntfyz1cgkzRPNsc6Nar2FhUfdkr\nbBaBc8tJ2D+0xKbuCg94/mVu9yer5RZ+ALoGheM9UagCCyiS08wL+DYCyK3w2O8K\nAW3S3HVvAgMBAAECggEAJPpa1aNyDz2ZABOAc8o/qEeNIbg7fwwQZBYabFtRDSsS\n05tG4rXxnGZmLt6lOvvjtXfrk+NDSjqTyHrmKtBr/QNlMyEj8/oXsaFWL+kClBP4\nUoGD86UtnQZGG+kATDkekmeCrSQkQVy9HbxE6qNPNRpdLnG/g/Tvy15zN17fJKHY\nzHRvUtkqsmsZdOrFzCWn+SVzRtI+FdiCVqSPA5DfiT/TD+6c5Rr/IcWVJhCflMEX\nAooyzagXXuQWqsk6wnN3+mQ9BDj7LbmgmZ4d2JNvGJmj+UBbQcyUIggTEydH+wIE\n1H7r3P0bqyjqa7mwHMd3xHExXpmTpjtppRpflHoNSQKBgQD0J0Q744+7Swzcuf5Z\n1FSGoThP6GaiqYeA6cSV007sBLRVYEAfvnUAaL9eeiNzbVNC9symf+jVE8e1rZWs\nrljc4cfuWFnEYoYrsdyC64p0d84aVqFHRxQkBXrgTb313x2SBXzTkOUtNWxclbDY\nQH55vnE/jX7Pqi1tR+TLH1PX6QKBgQDDK24anydsWUMT6unoz5ExtpHoIR4PP32k\nESalEtWUn96XPOCTrG8WK69HGxegualShAIvrWUE80vFIc5sLHtHuTZK6pBa47S4\nKCIEGi1/NQwNQ2PoJfxSQY5pQNWPd8brwl0jRLycCAWW1lLJPR2Tlcx0bpqv9sxi\nsNFr9AFjlwKBgGTItLz4EcPhlhyjVmBkasPsVx99MqjgzEOlu/WQ9Zot0vcPNUkl\nSIzzsFNinbGvJliVIiN013rloGHZlthiW+JJ/UrhA6UyemodEIamjk/HiLeMnSSc\nLa805+UhklGlWUKGq2F2BXRlAicxz39lGBBPUdZHJVq5x+i9ba9/bg/JAoGBAJDy\nEDN1P7IYGNkR/eYJQavKC1J6RfjNDmJq2mh+NGDM2mM3sxH5Xgb5KpOEa2fSew3t\nPDJsdDnY9szQ7p0n6+a4hrncupjFw9GA/MJPLrrqiqjPA8PFcj8ksL86h2Clc/Zj\nwwgOZIT88Cm1woXx/aU9+zn9aqSEhgZFi0LBVMbBAoGBAN2IA9QeR6hjcMsV3Odo\nI3z724ROyKeYm+7ogkm3iIlx5Rftg8Ay9Trsq8gOjNWa6KugNum1d5fROJIf6cFN\nGPuAtUFugexOiTi2K7wb6oRmQsY6kQao5rQtLYVz99a2kwSQiMyHCwPgf/lw5mnf\nT2a2voxFeVVd4y8DzdJL8yxW\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-y1pcd@rafaelsandovalweek10fbjavafx.iam.gserviceaccount.com",
+  "client_id": "102667190882900931630",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-y1pcd%40rafaelsandovalweek10fbjavafx.iam.gserviceaccount.com"
+}
