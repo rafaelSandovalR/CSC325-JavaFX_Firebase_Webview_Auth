@@ -2,6 +2,7 @@ package com.mycompany.mvvmexample;
 
 import com.google.cloud.firestore.Firestore;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserRecord;
 import com.mycompany.mvvmexample.FirestoreContext;
 import java.io.IOException;
 import javafx.application.Application;
@@ -19,6 +20,7 @@ public class App extends Application {
     public static FirebaseAuth fauth;
     public static Scene scene;
     private final FirestoreContext contxtFirebase = new FirestoreContext();
+    public static UserRecord loggedInUser;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
