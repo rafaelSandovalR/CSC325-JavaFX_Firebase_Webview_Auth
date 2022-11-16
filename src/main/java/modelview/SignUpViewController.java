@@ -23,7 +23,7 @@ import javafx.scene.control.TextField;
  *
  * @author Rsand
  */
-public class SignUpViewController implements Initializable {
+public class SignUpViewController{
 
     @FXML
     private TextField emailTextField;
@@ -31,21 +31,21 @@ public class SignUpViewController implements Initializable {
     private TextField passwordTextField;
     @FXML
     private Label statusMessageLabel;
+    @FXML
+    private TextField usernameTextField;
 
     /**
      * Initializes the controller class.
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    
+    public void initialize() {
         // TODO
     }
 
     @FXML
     private void createAccountButtonPress(ActionEvent event) {
 
-        boolean successful = registerUser();
-
-        if (successful) {
+        if (registerUser()) {
             try {
                 App.setRoot("LoginView.fxml");
             } catch (IOException ex) {
@@ -58,17 +58,24 @@ public class SignUpViewController implements Initializable {
 
         String emailInput = emailTextField.getText().trim();
         String passwordInput = passwordTextField.getText().trim();
-
+        String usernameInput = usernameTextField.getText().trim();
+       
         if (userExists(emailInput)) {
             displayMessage("Email Already Exists");
             return false;
-        } else {
+        } 
+        else if(!validatePassword(passwordInput)){
+            displayMessage("Password must be at least six characters long");
+            return false;
+        }
+        else {
             UserRecord.CreateRequest request = new UserRecord.CreateRequest()
                     .setEmail(emailInput)
+                    .setDisplayName(usernameInput)
                     .setEmailVerified(false)
                     .setPassword(passwordInput)
                     .setDisabled(false);
-
+            
             UserRecord userRecord;
             try {
                 userRecord = App.fauth.createUser(request);
@@ -84,11 +91,9 @@ public class SignUpViewController implements Initializable {
     }
 
     private boolean userExists(String email) {
-        UserRecord userRecord;
+        
         try {
-            userRecord = App.fauth.getInstance().getUserByEmail(email);
-            // See the UserRecord reference doc for the contents of userRecord.
-            System.out.println("Successfully fetched user data: " + userRecord.getEmail());
+            App.fauth.getInstance().getUserByEmail(email);
             return true;
         } catch (FirebaseAuthException ex) {
             Logger.getLogger(SignUpViewController.class.getName()).log(Level.SEVERE, null, ex);
@@ -99,6 +104,23 @@ public class SignUpViewController implements Initializable {
     private void displayMessage(String message) {
         statusMessageLabel.setText(message);
         statusMessageLabel.setVisible(true);
+    }
+    
+    private boolean validatePassword(String password){
+        if(password.length() >= 6){
+            return true;
+        }
+        else
+            return false;
+    }
+
+    @FXML
+    private void backButtonPress(ActionEvent event) {
+        try {
+            App.setRoot("LoginView.fxml");
+        } catch (IOException ex) {
+            Logger.getLogger(WebContainerController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }

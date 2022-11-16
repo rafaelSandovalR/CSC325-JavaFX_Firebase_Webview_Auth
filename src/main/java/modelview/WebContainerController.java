@@ -48,7 +48,7 @@ public class WebContainerController implements Initializable {
                     + "  </script> "//
                     + "</head> "//
                     + "<body> "//
-                    + "   <h2>This is Html content</h2> <input id='ueberschr' value='yellow' />"//
+                    + "   <h2>Hello " + App.loggedInUser.getDisplayName() + "</h2> <input id='ueberschr' value='yellow' />"//
                     + "   <button onclick='app12.showTime();changeBgColor();'>Call To JavaFX</button> "//
                     + "</body> "//
                     + "</html> "//

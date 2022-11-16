@@ -7,6 +7,7 @@ package modelview;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.UserRecord;
 import com.mycompany.mvvmexample.App;
+import static com.mycompany.mvvmexample.App.scene;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,6 +18,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Window;
 
 /**
  * FXML Controller class
@@ -76,7 +78,7 @@ public class LoginViewController implements Initializable {
         try {
             App.loggedInUser = App.fauth.getInstance().getUserByEmail(emailInput);
             // See the UserRecord reference doc for the contents of userRecord.
-            System.out.println("Successfully fetched user data: " + App.loggedInUser.getEmail());
+            System.out.println("Successfully fetched user data: " + App.loggedInUser.getDisplayName());
             return true;
         } catch (FirebaseAuthException ex) {
             Logger.getLogger(SignUpViewController.class.getName()).log(Level.SEVERE, null, ex);

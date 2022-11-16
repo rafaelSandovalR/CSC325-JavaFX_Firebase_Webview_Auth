@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 /**
  * JavaFX App
@@ -20,6 +21,7 @@ public class App extends Application {
     public static FirebaseAuth fauth;
     public static Scene scene;
     private final FirestoreContext contxtFirebase = new FirestoreContext();
+    //keeps track of who is logged in;
     public static UserRecord loggedInUser;
 
     @Override
@@ -34,6 +36,8 @@ public class App extends Application {
 
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+        Window window = scene.getWindow();
+        window.sizeToScene();
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
